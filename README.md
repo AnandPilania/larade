@@ -1,4 +1,4 @@
-# Shift Clone - Educational Framework Upgrade Tool
+# Larade - Educational Framework Upgrade Tool
 
 An educational project demonstrating how to build a Laravel Shift alternative with support for PHP and Laravel framework upgrades.
 
