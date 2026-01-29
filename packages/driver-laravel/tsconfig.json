@@ -1,0 +1,18 @@
+{
+    "extends": "../../packages/core/tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "references": [
+        {
+            "path": "../core"
+        },
+        {
+            "path": "../driver-php"
+        }
+    ]
+}
