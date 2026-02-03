@@ -14,48 +14,6 @@ This project uses a driver-based architecture where each framework/library has i
 4. **Package Dependency Management**: Automatically updates related packages when upgrading Laravel
 5. **Dry Run Mode**: Preview changes before applying them
 
-### Project Structure
-
-```
-larade/
-├── packages/
-│   ├── core/                      # Core upgrade engine
-│   │   ├── src/
-│   │   │   ├── Driver.ts          # Abstract driver class
-│   │   │   ├── UpgradeEngine.ts   # Main orchestrator
-│   │   │   ├── services/
-│   │   │   │   └── GitService.ts  # Git operations
-│   │   │   └── parsers/
-│   │   │       └── ParserRegistry.ts
-│   │   └── package.json
-│   │
-│   ├── driver-php/                # PHP driver
-│   │   ├── src/
-│   │   │   ├── PhpDriver.ts
-│   │   │   └── transformers/
-│   │   │       ├── Php74To80Transformer.ts
-│   │   │       ├── Php80To81Transformer.ts
-│   │   │       └── Php81To82Transformer.ts
-│   │   └── package.json
-│   │
-│   ├── driver-laravel/            # Laravel driver (depends on PHP driver)
-│   │   ├── src/
-│   │   │   ├── LaravelDriver.ts
-│   │   │   ├── transformers/
-│   │   │   │   ├── Laravel9To10Transformer.ts
-│   │   │   │   └── Laravel10To11Transformer.ts
-│   │   │   └── utils/
-│   │   │       └── PackageDependencyHandler.ts
-│   │   └── package.json
-│   │
-│   └── cli/                       # CLI interface
-│       ├── src/
-│       │   └── index.ts
-│       └── package.json
-│
-└── example-project/               # Example Laravel project for testing
-```
-
 ## How It Works
 
 ### 1. Driver Dependencies
