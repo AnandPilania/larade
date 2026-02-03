@@ -8,8 +8,9 @@
     "scripts": {
         "build": "npm run build --workspaces --if-present",
         "dev:cli": "npm run dev -w @larade/cli",
-        "dev:web": "npm run dev -w @larade,"start:web": "npm run start -w @larade/web"
-    },larade
+        "dev:web": "npm run dev -w @larade/web",
+        "start:web": "npm run start -w @larade/web"
+    },
     "devDependencies": {
         "@types/node": "^20.10.0",
         "typescript": "^5.3.3"
