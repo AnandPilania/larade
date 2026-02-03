@@ -106,21 +106,6 @@ composer.json:
 ✓ Upgrade completed successfully!
 ```
 
-## Project Structure
-
-```
-larade/
-├── packages/
-│   ├── core/              # Core engine
-│   ├── driver-php/        # PHP driver
-│   ├── driver-laravel/    # Laravel driver
-│   └── cli/               # Command line interface
-│
-├── example-project/       # Test Laravel project
-├── README.md             # Full documentation
-└── QUICKSTART.md         # This file
-```
-
 ## Next Steps
 
 1. **Explore the Code**: Check out how drivers are implemented
