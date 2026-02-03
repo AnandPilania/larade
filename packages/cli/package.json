@@ -1,6 +1,7 @@
 {
     "name": "@larade/cli",
     "version": "0.0.1",
+    "author": "Anand Pilania <pilaniaanand@gmail.com>",
     "main": "dist/index.js",
     "bin": {
         "larade": "./dist/index.js"
